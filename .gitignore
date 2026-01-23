@@ -49,6 +49,7 @@ dist/
 data/
 backup duckdb/
 data.zip
+data_theo/
 
 # Fichiers data courants
 *.csv
