@@ -50,6 +50,7 @@ data/
 backup duckdb/
 data.zip
 data_theo/
+football.duckdb.zip
 
 # Fichiers data courants
 *.csv
@@ -62,6 +63,7 @@ data_theo/
 *.duckdb
 *.duckdb.wal
 *.duckdb.tmp
+
 
 
 # ==================================================
