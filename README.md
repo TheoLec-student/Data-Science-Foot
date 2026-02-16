@@ -72,7 +72,9 @@ python ini.py
 ```
 ---
 
-3. Place football.duckdb and summary.csv in data file
+3. Prepare the data folder:  
+* Create a folder named data in the project directory.
+* Place football.duckdb and summary.csv inside the data folder.
 
 ## Launch :
 Run main.ipynb. The full workflow takes less than 10 minutes to complete.
