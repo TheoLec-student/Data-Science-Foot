@@ -71,6 +71,9 @@ cd <repository-directory>
 python ini.py
 ```
 ---
+
+3. Place football.duckdb and summary.csv in data file
+
 ## Launch :
 Run main.ipynb. The full workflow takes less than 10 minutes to complete.
 ---
