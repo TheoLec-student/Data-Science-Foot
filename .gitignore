@@ -46,13 +46,15 @@ dist/
 # ==================================================
 # Données volumineuses (DATA)
 # ==================================================
-data/
+game/
+practice/
 backup duckdb/
 data.zip
 data_theo/
 football.duckdb.zip
 Perso/
 V1/
+player_numbering.txt
 
 # Fichiers data courants
 *.csv
