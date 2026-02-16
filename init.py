@@ -6,7 +6,7 @@ import shutil
 # ===============================
 # Chemin vers l'exécutable Python 3.11
 # ===============================
-python_executable = "python3.11"
+python_executable = sys.executable
 
 # Vérifier si python3.11 est disponible
 if shutil.which(python_executable) is None:
