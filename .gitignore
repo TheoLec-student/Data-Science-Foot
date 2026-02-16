@@ -51,6 +51,9 @@ backup duckdb/
 data.zip
 data_theo/
 football.duckdb.zip
+Perso/
+V1/
+Xpos/
 
 # Fichiers data courants
 *.csv
