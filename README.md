@@ -12,7 +12,8 @@ This repository contains data, tools, and scripts for analyzing professional foo
 3. [Requirements](#requirements)  
 4. [Getting Started](#getting-started)  
 5. [Launch](#launch)
-6. [Licence](#licence)  
+6. [Parameters](#parameters)
+7. [Licence](#licence)  
 
 ---
 
@@ -40,6 +41,7 @@ This project allows you to:
 ```
 ├── data/                         
 │   ├── summary.csv                # Player-session mapping and metadata
+│   ├── player_numbering.txt       # List players with pseudo
 │   └── football.duckdb            # Database
 │
 ├── main.ipynb                   # Jupyter notebooks to reproduce analysis
@@ -66,7 +68,6 @@ cd <repository-directory>
 ```
 
 2. Run init.py:
-
 ```bash
 python init.py
 ```
@@ -75,11 +76,42 @@ python init.py
 3. Prepare the data folder:  
 * Create a folder named data in the project directory.
 * Place football.duckdb and summary.csv inside the data folder.
-
-## Launch :
-Run main.ipynb. The full workflow takes less than 10 minutes to complete.
 ---
-## Licence :
+## Launch
+
+To run the project, open and run `main.ipynb`. The full workflow takes less than 10 minutes to complete.
+
+---
+## Parameters
+
+⚠️ **Warning:** The analyses will only run if the selected player has sessions available.  
+- For **Individual** analysis: the player must have at least one session (game or practice) during the specified month.  
+- For **Match** analysis: the player must have participated in the specified match session.
+
+The project contains two places where the user can modify parameters to filter the data: **Individual** and **Match**.
+
+### Individual
+This section allows analyzing data for a specific player over a given month.
+
+```python
+month = '2020-03'          # Target month in YYYY-MM format
+session_type = 'game'      # Type of session to filter ('game' or 'practice')
+player_selected = 6        # Player pseudo to filter; set to None to include all players
+```
+### Match
+This section allows analyzing a specific match for a selected player.
+
+```python
+match = '2020-02-01'         # Date of the match
+session_type = 'game'        # Type of session
+position = 'back'            # Player position: 'back', 'mid', 'forward'
+duration = 100               # Number of frames to display (e.g., 100 frames = 10s at 10Hz)
+pseudo = 35                  # Player pseudo
+sampling_rate = 100          # Subsample data (e.g., 1 point every 100 frames)
+```
+---
+
+## Licence
 
 This project is free software: you can redistribute and/or modify it under the terms of the GNU GPL v3.
 No warranty is provided; see LICENSE for details.
