@@ -42,9 +42,9 @@ This project allows you to:
 │   ├── summary.csv                # Player-session mapping and metadata
 │   └── football.duckdb            # Database
 │
-├──  main.ipynb                   # Jupyter notebooks to reproduce analysis
+├── main.ipynb                   # Jupyter notebooks to reproduce analysis
 │       
-├── ini.py                          # Initialization script
+├── init.py                          # Initialization script
 │
 ├── README.md                      # Project overview and instructions
 └── LICENSE                        # GNU General Public License v3
@@ -68,7 +68,7 @@ cd <repository-directory>
 2. Run init.py:
 
 ```bash
-python ini.py
+python init.py
 ```
 ---
 
