@@ -42,8 +42,8 @@ This project allows you to:
 │   ├── summary.csv                # Player-session mapping and metadata
 │   └── football.duckdb            # Database
 │
-├── notebooks/                     # Jupyter notebooks to reproduce analysis
-│   └── main.ipynb     
+├──  main.ipynb                   # Jupyter notebooks to reproduce analysis
+│       
 ├── ini.py                          # Initialization script
 │
 ├── README.md                      # Project overview and instructions
